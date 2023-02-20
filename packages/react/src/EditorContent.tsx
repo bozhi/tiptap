@@ -117,6 +117,8 @@ export class PureEditorContent extends React.Component<EditorContentProps, Edito
       return
     }
 
+    this.initialized = false
+
     if (!editor.isDestroyed) {
       editor.view.setProps({
         nodeViews: {},
